@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.io chat</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="./login.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <div class="window" id="window">
+        <div class="container">
+            <div class="topLogin"> 
+                <h4>Join the conversation</h4>
+            </div>
+            
+            <div class="sendMessage">
+                <img class="loginImg" src="./assets/msn-messenger-icon.png">
+                <div id="inputContainer">
+                    <form action="messenger.html">
+                        <input autocomplete="off" name="userName" id="userName" placeholder="Please enter a username" oninvalid="setCustomValidity('Please enter a username')" oninput="setCustomValidity('')"type="text" autofocus  required/>
+                        <button type="submit" id="loginBtn"><u>J</u>oin</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+    crossorigin="anonymous">
+    </script>
+</body>
+</html>
